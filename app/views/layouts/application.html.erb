@@ -11,6 +11,19 @@
   </head>
 
   <body>
+
+    <%#= render "navbar" %>
+
+  <div class="container">
+
+    <nav>
+        <div id="homepage"><%= link_to "Wikinimous", articles_path %></div>
+        <div id="new-article"><%= link_to  "New Article", new_article_path %></div>
+    </nav>
+
+  </div>
+
+
     <%= yield %>
   </body>
 </html>
